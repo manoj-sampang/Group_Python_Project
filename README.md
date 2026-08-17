@@ -1,5 +1,5 @@
 # Project Title
-    Project on [IMAGE RECOGNITION] using CIFAR 10 database which have 10 classes of images to recognize 
+    Project on [IMAGE RECOGNITION] using CIFAR 10 dataset which have 10 classes of images to recognize 
 
 
 # Project Structure
@@ -13,9 +13,9 @@
 
 # Installation
     ### Firstly, activate the virtual environment 
-        - python3.13 -m venv .venv 
-            # windows .venv/Scripts/activate
-            # mac/linux source .venv/bin/activate
+        - python3.13.14 -m venv .venv 
+            # windows : .venv/Scripts/activate
+            # mac/linux : source .venv/bin/activate
 
     ### Install the dependencies used 
         - tensorflow, numpy and matplotlib  ###used 
