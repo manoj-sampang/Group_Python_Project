@@ -7,6 +7,7 @@
     |
     |-- .venv/                      *** virtual environment so the packages/libraries are not scattered ***
     |-- main.py                     *** the src code for the project where the python code resides *** 
+    |-- manual_image_classifier.py  
     |-- requirements.txt            *** lists all the external libraries and dependencies required ***
     |-- README.md                   *** documentation of the project ***
     |-- .gitignore                  *** here, resides the ignored folder and file while pushing to git ***
