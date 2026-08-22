@@ -167,9 +167,11 @@
 
 
                             
-                            #Similarly, each image has its own label representing any equivalent value that corresponds to
-                             one of its 10 classes, here there are 50,000 labels for all of those 50,000 images, so there                                would be 50,000 labels in a single column which is represented (50,000 labels, 1 column) so,                                that would be 2-dimensional array/ndarray.
-                             for all of those 50,000 images each label corresponds to the respective image classes.
+                #Similarly, each image has its own label representing any equivalent value that corresponds to
+                  one of its 10 classes, here there are 50,000 labels for all of those 50,000 images, so there would be 
+                  50,000 labels in a single column which is represented (50,000 labels, 1 column) so, that would be 
+                  2-dimensional array/ndarray.
+                - for all of those 50,000 images each label corresponds to the respective image classes.
 
                              --label Structure
                                     |
