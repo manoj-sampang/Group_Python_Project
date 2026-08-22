@@ -27,3 +27,140 @@
     - used for displaying images    ### Matplotlib
 
     - AI library to implement neural networks provides ready-made building blocks   ### Tensorflow
+
+
+# Advanced Concepts
+    # CNN models
+        - initially, before building the model we need to understand how datasets are divided and how Convolutional 
+          Neural Network works ### tensorflow, keras 
+
+        - here, datasets are divided into 50,000 images for training the model and 10,000 for testing the model for 
+          accuracy, seeing how efficient is the model on those training data.
+
+        ### Dataset Structure 
+            -- here each image is 32 x 32 pixels horizontal and vertical with each pixel with its (R,G,B) values,
+               so, our structure of the dataset is typcially (50,000 images, 32 row pixels, 32 column pixels, 3 colors)
+               for only training the data on, those are just numeric values/colors representing each pixel.
+
+               
+            Inside the dataset
+                    | 
+                    |--1st image 
+                    |    |
+                    |    |-- 1st row
+                    |    |       | 
+                    |    |       |-- 1st column
+                    |    |       |       |
+                    |    |       |       |--[R, G, B]
+                    |    |       |
+                    |    |       |
+                    |    |       |--2nd column
+                    |    |       .       |
+                    |    |       .       |--[R, G, B]
+                    |    |       .   
+                    |    |       |
+                    |    |       |
+                    |    |       |--32 column
+                    |    |               |
+                    |    |               |--[R, G, B]
+                    |    |
+                    |    |
+                    |    |-- 2nd row
+                    |    |       | 
+                    |    |       |-- 1st column
+                    |    |       |       |
+                    |    |       |       |--[R, G, B]
+                    |    |       |
+                    |    |       |
+                    |    |       |--2nd column
+                    |    |       .       |
+                    |    |       .       |--[R, G, B]
+                    |    |       .
+                    |    |       |
+                    |    |       |
+                    |    |       |--32 column
+                    |    |               |
+                    |    |               |--[R, G, B]
+                    |    |
+                    |    |
+                    |    .
+                    |    .
+                    |    .
+                    |    |-- 32 row
+                    |            | 
+                    |            |-- 1st column
+                    |            |       |
+                    |            |       |--[R, G, B]
+                    |            |
+                    |            |
+                    |            |--2nd column
+                    |            .       |
+                    |            .       |--[R, G, B]
+                    |            .
+                    |            |
+                    |            |
+                    |            |--32 column
+                    |                    |
+                    |                    |--[R, G, B]
+                    |
+                    .
+                    .
+                    .
+                    |--50,000th image
+                            |
+                            |-- 1st row
+                            |       | 
+                            |       |-- 1st column
+                            |       |       |
+                            |       |       |--[R, G, B]
+                            |       |
+                            |       |
+                            |       |--2nd column
+                            |       .       |
+                            |       .       |--[R, G, B]
+                            |       .   
+                            |       |
+                            |       |
+                            |       |--32 column
+                            |               |
+                            |               |--[R, G, B]
+                            |
+                            |
+                            |-- 2nd row
+                            |       | 
+                            |       |-- 1st column
+                            |       |       |
+                            |       |       |--[R, G, B]
+                            |       |
+                            |       |
+                            |       |--2nd column
+                            |       .       |
+                            |       .       |--[R, G, B]
+                            |       .
+                            |       |
+                            |       |
+                            |       |--32 column
+                            |               |
+                            |               |--[R, G, B]
+                            |
+                            |
+                            .
+                            .
+                            .
+                            |-- 32 row
+                                    | 
+                                    |-- 1st column
+                                    |       |
+                                    |       |--[R, G, B]
+                                    |
+                                    |
+                                    |--2nd column
+                                    .       |
+                                    .       |--[R, G, B]
+                                    .
+                                    |
+                                    |
+                                    |--32 column
+                                            |
+                                            |--[R, G, B]
+
