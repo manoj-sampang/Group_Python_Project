@@ -34,8 +34,8 @@
         - initially, before building the model we need to understand how datasets are divided and how Convolutional 
           Neural Network works ### tensorflow, keras 
 
-        - here, datasets are divided into 50,000 images for training the model and 10,000 for testing the model for 
-          accuracy, seeing how efficient is the model on those training data.
+        - here, datasets are divided into 50,000 images for training the model and 10,000 separate images for testing how 
+        well the trained model generalizes to images it has not trained on.
 
         ### Dataset Structure 
             -- here each image is 32 x 32 pixels horizontal and vertical with each pixel with its (R,G,B) values,
@@ -280,5 +280,4 @@
 
                     64 → 10
 
-                The final layer produces the model's predictions for the ten
-                CIFAR-10 classes.
+                The final layer produces the model's predictions for the ten CIFAR-10 classes.
